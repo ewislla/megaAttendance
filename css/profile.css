@@ -8,9 +8,6 @@
   color: var(--primary-color);
 }
 
-.absolute {
-  position: absolute;
-}
 
 .container {
   padding: 15px;
@@ -63,6 +60,7 @@
 }
 
 .profile-pic {
+  position: absolute;
   top: -90px;
   font-size: 24px;
   border-radius: 2px;
@@ -77,6 +75,7 @@
 }
 
 .profile-div {
+  position: absolute;
   height: 150px;
   left: 200px;
   top: -80px;
@@ -101,6 +100,7 @@
 }
 
 .status {
+  position: absolute;
   right: 15px;
   top: 15px;
   background: #eee;
@@ -133,4 +133,61 @@
 .label {
   font-size: 12px;
   color: gray;
+}
+
+.footer-d {
+  display: flex;
+  padding: 20px;
+  background-color: var(--primary-color);
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.img-f {
+  height: 80px;
+}
+
+.footer-d1 {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.footer-d1 a {
+  margin-right: 20px;
+  color: white
+}
+
+.footer-d2 {
+  height: 30px;
+}
+
+.footer-d2 span {
+  color: blue;
+  margin-right: 5px
+}
+
+.footer-last {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5px 5px 5px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-space {
+  width: 200px;
+  height: 100px;
+}
+
+.footer-space p {
+  color: white;
+  margin-bottom: 20px;
+  ;
 }
