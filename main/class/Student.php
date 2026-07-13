@@ -1,6 +1,7 @@
 <?php
 
 include("../database/Connection.php");
+include("../trait/StudentTrait.php");
 
 class Student extends connection
 {
@@ -19,7 +20,7 @@ class Student extends connection
         $sql = "INSERT INTO students(student_id,name,department,email)
                 VALUES(?,?,?,?)";
 
-        $stmt = $this->conn->prepare($sql);
+        $stmt = $this->con->prepare($sql);
 
         $stmt->bind_param(
             "ssss",

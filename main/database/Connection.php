@@ -8,10 +8,16 @@ class Connection
 
     public function __construct()
     {
-        $this->con = new mysqli('localhost', 'root', '', 'megaAttendance');
+        $this->con = new mysqli('localhost', 'root', '', 'world');
 
         if ($this->con->connect_error) {
             die("Connection failed " . $this->con->connect_error);
+        } else {
+            echo "Connection successful";
         }
     }
 }
+
+
+
+$boy = new Connection();
